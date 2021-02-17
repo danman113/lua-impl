@@ -14,6 +14,10 @@ file(
   ${CMAKE_SOURCE_DIR}/src/*.c
 )
 
+include_directories(${LUA_INCLUDE_DIR})
+
+message(${LUA_INCLUDE_DIR})
+
 file(
   GLOB_RECURSE HEADERS
   ${CMAKE_SOURCE_DIR}/src/*.h
